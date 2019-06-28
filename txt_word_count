@@ -1,0 +1,15 @@
+txt = ("As the country became embroiled in a domestic crisis, the first government was dislodged and succeeded by several different administrations. Bolikango served as Deputy Prime Minister in one of the new governments before a partial state of stability was reestablished in 1961. He mediated between warring factions in the Congo and briefly served once again as Deputy Prime Minister in 1962 before returning to the parliamentary opposition. After Joseph-Desire Mobutu took power in 1965, Bolikango became a minister in his government. Mobutu soon dismissed him but appointed him to the political bureau of the Mouvement Populaire de la Revolution. Bolikango left the bureau in 1970. He left Parliament in 1975 and died seven years later. His grandson created the Jean Bolikango Foundation in his memory to promote social progress. The President of the Congo posthumously awarded Bolikango a medal in 2005 for his long career in public service.")
+sentance = txt.lower()
+new_sen= sentance.split()
+print(new_sen)
+
+word={}
+for key in new_sen:   #나의 데이터가 새로만든 딕셔너리에 있으면 그 딕을+1 없으면 그냥 1
+    if key in word:    #new_sen에서 단어를 한개씩 차례대로 뽑아 i에 하나씩 넣는다. 그리고 그 i가 word에 있는지 비교 잇으면 +1, 없으면 1
+        word[key]+=1
+    else:
+        word[key] =1
+
+print(word)
+
+#단어별로 count!
