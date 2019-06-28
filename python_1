@@ -1,0 +1,19 @@
+#sol1
+a=[5,10]
+
+for i in a:
+    if i%2==0:
+        print("even")
+    
+    else:
+        print("odd")
+        
+        
+a= int(input("숫자를 입력해 주세요: "))
+if a%2==0:
+    print("even")
+    
+else:
+    print("odd")
+
+#sol2
